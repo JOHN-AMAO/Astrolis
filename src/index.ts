@@ -1,5 +1,4 @@
 import express from "express";
-import http from "http";
 import cors from "cors";
 import path from "path";
 import simpleGit from "simple-git";
@@ -7,7 +6,6 @@ import { generate } from "./utils";
 import { getAllFiles } from "./file";
 
 const app = express();
-const server = http.createServer(app);
 
 app.use(cors());
 app.use(express.json());
